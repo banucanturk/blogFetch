@@ -59,7 +59,7 @@ function loadPage(posts) {
 
             // Header'ın arka planını değiştirdim
             const header = document.querySelector('.masthead');
-            header.style.backgroundImage = `url('${'assets/img/images.png'}')`;
+            header.style.backgroundImage = `url('${'assets/img/image.png'}')`;
 
         });
     });
