@@ -10,14 +10,14 @@ let posts = [];
 
 
 
-btn.addEventListener('click', function () {
-    fetch(requestPostsUrl)
-        .then(response => response.json())
-        .then(json => {
-            posts = json;
-            render();
-        });
-})
+// btn.addEventListener('click', function () {
+//     fetch(requestPostsUrl)
+//         .then(response => response.json())
+//         .then(json => {
+//             posts = json;
+//             render();
+//         });
+// })
 
 function renderPosts() {
     for (const post of posts) {

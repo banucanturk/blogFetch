@@ -340,6 +340,32 @@ th {
 label {
   display: inline-block;
 }
+/* Temel düğme stilleri */
+button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Arka plan rengi */
+  color: #fff; /* Yazı rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 3px; /* Köşe yuvarlama */
+  cursor: pointer; /* İşaretçi türünü değiştir */
+  transition: background-color 0.3s; /* Geçiş efekti */
+}
+
+/* Düğme üzerine gelindiğinde rengini değiştirin */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Düğme tıklanırken rengini değiştirin (isteğe bağlı) */
+button:active {
+  background-color: #00408f;
+}
+
+/* Düğme devre dışı bırakıldığında stilini ayarlayın (isteğe bağlı) */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 
 button {
   border-radius: 0;
@@ -349,12 +375,53 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+form button {
+  background-color: #000;
+  color: white;
+}
+
+form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto; 
+  margin-bottom: 30px;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
 input,
 button,
 select,
 optgroup,
 textarea {
-  margin: 0;
+  margin: 10px;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -3748,6 +3815,9 @@ textarea.form-control-lg {
   .navbar-toggler {
     transition: none;
   }
+}
+form {
+  text-align: center;
 }
 .navbar-toggler:hover {
   text-decoration: none;
